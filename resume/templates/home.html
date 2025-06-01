@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% load static %} {% block content1 %}
+<div class="row my-5">
+  <div class="col-12 d-flex justify-content-center align">
+    <div class="cirular-image-container">
+      <img class="circular-image" src="{% static "image/passport.jpg" %}" >
+    </div>
+  </div>
+  <div class="col-12 text-center mt-4">
+    <h4 class="title">Hi, my name is</h4>
+    <div class="name">
+      <h2>Siddhi Mahajan</h2>
+      <h1 class="text">I Am A Full Stack Python Developer</h1>
+    </div>
+  </div>
+
+  <div class="col-12 text-center mt-3">
+    <div class="col-12 d-flex justify-content-center align">
+      <a
+        href="https://www.linkedin.com/in/siddhi-mahajan-21035b228"
+        target="blank"
+        class="ms-3"
+      >
+        <img src="{%static "image/LinkedIn_logo.png.webp" %}" alt="LinkedIn"
+        width="50" height="50" class="social_link">
+      </a>
+
+      <a href="https://github.com/SIDDHI8605" target="blank" class="ms-3">
+        <img src="{%static "image/images.png" %}" alt="Github" width="50"
+        height="50" class="social_link">
+      </a>
+
+      <a
+        href="https://www.hackerrank.com/profile/siddhimahajan861"
+        target="blank"
+        class="ms-3"
+      >
+        <img src="{%static "image/hackerank.png" %}" alt="Hackerank" width="50"
+        height="50" class="social_link">
+      </a>
+    </div>
+  </div>
+</div>
+{% endblock content1 %}

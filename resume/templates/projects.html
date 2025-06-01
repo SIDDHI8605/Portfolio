@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %}
+
+<div class="container my-4">
+  <div class="row">
+    {% for project in projects_show %}
+    <div class="col-12 col-md-6 mb-4">
+      <div class="card bg-dark text-light h-100 shadow">
+        <img src="{% static project.path %}" class="card-img-top img-fluid" alt="{{ project.title }}" style="max-height: 300px; object-fit: cover; border-bottom: 3px solid #FFAA00;">
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ project.title }}</h5>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content1 %}

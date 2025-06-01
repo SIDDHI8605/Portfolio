@@ -1,0 +1,118 @@
+{% extends "base.html" %} {% load static %} {% block content1 %}
+<!-- About Section -->
+<div class="container my-5">
+  <div class="row align-items-center">
+    <!-- Profile Image -->
+    <div class="col-md-4 text-center mb-4 mb-md-0">
+      <img
+        src="{% static 'image/avtar1.jpg' %}"
+        alt="Profile Picture"
+        class="img-fluid rounded-circle shadow"
+        style="max-width: 250px"
+      />
+    </div>
+
+    <!-- About Text -->
+    <div class="col-md-8 text-light">
+      <h2>Hello!</h2>
+      <p class="fs-5">
+        I'm <strong>Siddhi Sanjay Mahajan</strong>, a passionate Frontend
+        Developer skilled in HTML, CSS, JavaScript, and Angular. I also have a
+        solid foundation in Python, Django, and SQL, making me a versatile
+        full-stack developer.
+      </p>
+      <p class="fs-5">
+        I love turning ideas into interactive, user-friendly web experiences. My
+        focus is on clean design and seamless responsiveness for all devices.
+      </p>
+      <p class="fs-5">
+        💡 <strong>What I Do:</strong><br />
+        ✔️ Design responsive, modern web interfaces<br />
+        ✔️ Build scalable, efficient web applications<br />
+        ✔️ Explore full-stack development<br />
+        ✔️ Learn continuously and improve
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Tech Stack Section -->
+<div class="container my-5">
+  <h2 class="text-center" style="color: #ffaa00">My Tech Stack</h2>
+  <div class="row justify-content-center text-center mt-4">
+    <!-- Each logo in a responsive column -->
+    <div class="col-4 col-sm-3 col-md-2 mb-4">
+      <img
+        src="{% static 'image/html.jpg' %}"
+        alt="HTML"
+        class="img-fluid"
+        width="60"
+        height="60"
+      />
+    </div>
+    <div class="col-4 col-sm-3 col-md-2 mb-4">
+      <img
+        src="{% static 'image/css.jpg' %}"
+        alt="CSS"
+        class="img-fluid"
+        width="60"
+        height="60"
+      />
+    </div>
+    <div class="col-4 col-sm-3 col-md-2 mb-4">
+      <img
+        src="{% static 'image/js.jpg' %}"
+        alt="JavaScript"
+        class="img-fluid"
+        width="60"
+        height="60"
+      />
+    </div>
+    <div class="col-4 col-sm-3 col-md-2 mb-4">
+      <img
+        src="{% static 'image/bootstrap.jpg' %}"
+        alt="Bootstrap"
+        class="img-fluid"
+        width="60"
+        height="60"
+      />
+    </div>
+    <div class="col-4 col-sm-3 col-md-2 mb-4">
+      <img
+        src="{% static 'image/angular.jpg' %}"
+        alt="Angular"
+        class="img-fluid"
+        width="60"
+        height="60"
+      />
+    </div>
+    <div class="col-4 col-sm-3 col-md-2 mb-4">
+      <img
+        src="{% static 'image/python.jpg' %}"
+        alt="Python"
+        class="img-fluid"
+        width="60"
+        height="60"
+      />
+    </div>
+    <div class="col-4 col-sm-3 col-md-2 mb-4">
+      <img
+        src="{% static 'image/sql.jpg' %}"
+        alt="SQL"
+        class="img-fluid"
+        width="60"
+        height="60"
+      />
+    </div>
+    <div class="col-4 col-sm-3 col-md-2 mb-4">
+      <img
+        src="{% static 'image/django.jpg' %}"
+        alt="Django"
+        class="img-fluid"
+        width="50"
+        height="40"
+      />
+    </div>
+  </div>
+</div>
+{% endblock %}
