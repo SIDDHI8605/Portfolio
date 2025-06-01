@@ -75,7 +75,7 @@ def contact(request):
             thank_you_message = f'Hi {name},\n\nThank you for reaching out to Me. I have received your message'
             send_mail(thank_you_subject, thank_you_message, settings.EMAIL_HOST_USER, [email])
 
-            return redirect('thank_you.html')  # Optional: redirect to a thank-you page
+            return redirect('thank_you')  # Optional: redirect to a thank-you page
     else:
         form = ContactForm()
 
